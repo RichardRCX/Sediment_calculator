@@ -8,7 +8,8 @@ from scipy.stats import lognorm
 from sklearn.impute import SimpleImputer
 import sediment_type
 import ref_water
-
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 # Initialize Flask app
 app = Flask(__name__)
 
