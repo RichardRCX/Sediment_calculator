@@ -10,6 +10,8 @@ import sediment_type
 import ref_water
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+import tensorflow as tf
+tf.config.set_visible_devices([], 'GPU')
 # Initialize Flask app
 app = Flask(__name__)
 
